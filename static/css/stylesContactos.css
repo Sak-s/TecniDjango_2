@@ -1,0 +1,340 @@
+.hv-background {
+  background:   #dcebfc85;
+  color: #0400ffbe;
+}
+.contact{
+background-image: url("/static/imagenes/abridora.jpg") ;
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 50px; /* Ajusta según sea necesario */
+}
+
+.contact::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+z-index: -1;
+}
+
+.container {
+z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+color: white; /* Color del texto sobre el fondo oscuro */
+ text-align: center;/* Centra el contenido */
+}
+
+
+
+.container-logo{
+  align-items: center;
+      --bs-btn-hover-bg: #668dc0;
+      --bs-btn-border-color: none;
+      --bs-btn-border-radius: 10.375rem;
+      margin-top: 20px;
+      margin-right: 500px;
+}
+.btn-primary {
+  --bs-btn-hover-bg: #668dc0;
+  --bs-btn-border-color: none;
+  --bs-btn-border-radius: 10.375rem;
+}
+.btn-secondary {
+  --bs-btn-bg: #bdd6ff;
+  --bs-btn-border-color: none;
+  --bs-btn-border-radius: 10.375rem;
+}
+.btn-third{
+  --bs-btn-bg: #304a6e;
+  --bs-btn-hover-bg: #668dc0;
+  --bs-btn-border-color: none;
+  --bs-btn-border-radius: 10.375rem; 
+  color: #d3d1d1;
+  padding: 5px 50px;
+   margin: 15px 50px;  
+}
+.style-title {
+  font-size: 4.5rem;
+  display: block;
+}
+nav a{
+  font-weight: 600;
+  margin-right: 40px;
+}
+nav a:hover{
+  color: #050202;
+  font-family: serif;
+  text-decoration: none;
+  color: #000;
+}
+input.form-control{
+  margin-right: 50px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.container-login  h2 {margin-top:0;}
+/* .container-login  {
+position:relative;
+padding-top:50px;
+padding-bottom:50px;
+font-family: serif;
+background-color: #e9a81b;
+} */
+
+.container-login .img {
+  margin-bottom: 0px;
+  opacity: 0.4;
+  background: #00000077 url("/static/imagenes/abridora.jpg") top center no-repeat;
+  width: 100%;
+  height: 91vh;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.container-login{
+  font-family: serif;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+.container-login .container {
+  position:relative;
+  z-index:2;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #bdd6ff93;
+}
+@media screen and (max-width: 768px) {
+}
+/* .g-10 {
+gap: 10px;
+} */
+.footer-login {
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #d3d1d1;
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: serif;
+}
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+
+.contact .info {
+border-left: 30px solid #4771e4;
+border-bottom: 3px solid #475ee4;
+padding: 30px;
+background: #fff;
+width: 665px;
+box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+margin-left: -100px;
+
+
+}
+
+.contact .info i   {
+  font-size: 20px;
+  color: #47b2e4;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form label {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #47b2e4;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #209dd8;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section-title {
+  margin-bottom: 50px; /* Ajusta este valor según el espacio que desees */
+}
+
+.section-title h2 {
+
+font-family: 'Montserrat', sans-serif;/* Fuente para el título */
+font-size: 4vw; /* Tamaño del texto del encabezado (h2) en unidades de viewport */
+font-weight: bold;
+font-size: 50px; /* Tamaño del texto del encabezado (h2) */
+color: #2a303d; /* Color del texto negro */
+}
+
+
