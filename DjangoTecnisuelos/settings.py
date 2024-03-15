@@ -31,9 +31,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-npe4uaf6bkpf1!^oit6p5r_43+l0cyt%%fan_h3igaliku#y@('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["54.175.83.118"]
+ALLOWED_HOSTS = ['54.84.213.76']
 
 
 # Application definition
@@ -164,7 +164,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tecnidjango',
         'USER': 'root',
-        'PASSWORD': 'hyCgFv:,BY08',
+        'PASSWORD': 'TCX9A5u80Zf/',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
