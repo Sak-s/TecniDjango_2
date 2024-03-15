@@ -1,0 +1,54 @@
+{% extends "admin/change_list.html" %}
+
+{% block object-tools-items %}
+    {{ block.super }}
+    {% if is_popup %}
+        {# Botón solo en la vista de detalle emergente #}
+        <li>
+            <a href="{% url 'export_pdf_report' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                <i class="fas fa-file-pdf"></i> Exportar a PDF (Clientes)
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'export_pdf_report_inve' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                <i class="fas fa-file-pdf"></i> Exportar a PDF (Inventario)
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'export_pdf_report_test' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                <i class="fas fa-file-pdf"></i> Exportar a PDF (FielTrial)
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'export_pdf_report_labo' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                <i class="fas fa-file-pdf"></i> Exportar a PDF (LaboratoryTrial)
+            </a>
+        </li>
+    {% else %}
+        {% if cl.opts.model_name == 'client' %}
+            <li>
+                <a href="{% url 'export_pdf_report' %}" class="btn btn-dark" style="background-color:rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                    <i class="fas fa-file-pdf"></i> Exportar a PDF (Clientes)
+                </a>
+            </li>
+        {% elif cl.opts.model_name == 'inventory' %}
+            <li>
+                <a href="{% url 'export_pdf_report_inve' %}" class="btn btn-dark" style="background-color:rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);"">
+                    <i class="fas fa-file-pdf"></i> Exportar a PDF (Inventario)
+                </a>
+            </li>
+        {% elif cl.opts.model_name == 'fieltrial' %}
+            <li>
+                <a href="{% url 'export_pdf_report_test' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                    <i class="fas fa-file-pdf"></i> Exportar a PDF (FielTrial)
+                </a>
+            </li>
+        {% elif cl.opts.model_name == 'laboratorytrial' %}
+            <li>
+                <a href="{% url 'export_pdf_report_labo' %}" class="btn btn-dark" style="background-color: rgba(50, 147, 195, 0.894); color: rgba(255, 255, 255, 0.751);">
+                    <i class="fas fa-file-pdf"></i> Exportar a PDF (LaboratoryTrial)
+                </a>
+            </li>
+        {% endif %}
+    {% endif %}            
+{% endblock %}

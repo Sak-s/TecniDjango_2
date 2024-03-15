@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesSevicios.css' %}">
+    <title>Servicios de Pruebas de Suelos</title>
+</head>
+<body>
+    <header class="hv-background">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container container-fluid">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'Imagenes/20230309_161828.png' %}" id="logoTec" alt="Logo" width="200" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav  g-col-6">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-secondary" aria-current="page" href="{% url 'index' %}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-secondary" href="{% url 'agendar' %}">Agendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-secondary" href="{% url 'contacto' %}">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" href="{% url 'inicio' %}" role="button">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="description-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 description text-center mx-auto">
+                    <h1 class="title">Servicios</h1>
+                    <p>
+                        Tecnisuelos es una empresa especializada en el análisis y evaluación del suelo, 
+                        ofreciendo una amplia gama de servicios para garantizar la calidad y seguridad en proyectos 
+                        de construcción, agricultura, y más. Nuestro equipo de expertos realiza pruebas exhaustivas para determinar 
+                        la composición, resistencia, y características del suelo, proporcionando información valiosa para la toma de decisiones 
+                        fundamentadas. Confía en Tecnisuelos para obtener resultados precisos y confiables en cada etapa de tu proyecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid text-center mt-5">
+        <h2>NUESTROS SERVICIOS</h2>
+    </div>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="pruebas-titulo">Pruebas de Campo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/composición.jpg' %}" class="card-img-top" alt="composición">
+                        <div class="card-body">
+                            <h5 class="card-title">Análisis de composición del suelo</h5>
+                            <p class="card-text">Utilizando tecnología de vanguardia, evaluamos minuciosamente las propiedades físicas y químicas de tu suelo. Desde su densidad y contenido de humedad hasta su pH y capacidad de carga, proporcionamos una imagen completa de su composición única.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/compactacion.jpg' %}" class="card-img-top" alt="compactacion">
+                        <div class="card-body">
+                            <h5 class="card-title">Pruebas de compactación</h5>
+                            <p class="card-text">Comprobamos la compactación del suelo para garantizar una adecuada capacidad de soporte y estabilidad. Nuestras pruebas precisas determinan la densidad óptima y el grado de compactación necesario para tus proyectos de construcción.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/escarificacion.png' %}" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Analisis de Escarificacion</h5>
+                            <p class="card-text">El proceso de escarificación se realiza utilizando herramientas como rastrillos, escarificadores o cultivadores, que se utilizan para romper y aflojar la capa superficial del suelo. Esto permite que el agua, el aire y los nutrientes penetren más fácilmente en el suelo, promoviendo un mejor desarrollo de las raíces de las plantas y mejorando la calidad del suelo en general.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <h2 class="pruebas-titulo">Pruebas de Laboratorio</h2>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/resistencia.jpg' %}" class="card-img-top" alt="resistencia">
+                        <div class="card-body">
+                            <h5 class="card-title">Pruebas de resistencia</h5>
+                            <p class="card-text">Mediante ensayos de laboratorio y pruebas in situ, evaluamos la resistencia del suelo ante cargas estáticas y dinámicas. Estos análisis son esenciales para la planificación de proyectos de ingeniería, como la construcción de edificios, puentes y carreteras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/permeabilidad.jpg' %}" class="card-img-top" alt="permeabilidad">
+                        <div class="card-body">
+                            <h5 class="card-title">Pruebas de permeabilidad</h5>
+                            <p class="card-text">Medimos la permeabilidad del suelo para determinar su capacidad de drenaje. Estas pruebas son esenciales para la planificación de proyectos de construcción, ya que un drenaje inadecuado puede provocar daños estructurales y problemas de salud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{% static 'Imagenes/petrografico.jpg' %}" class="card-img-top" alt="petrografico">
+                        <div class="card-body">
+                            <h5 class="card-title">Analisis Petrografico</h5>
+                            <p class="card-text">El análisis petrográfico en suelos es un procedimiento utilizado para estudiar la composición mineralógica y las características microscópicas de las partículas presentes en una muestra de suelo. Durante esta prueba, se prepara una muestra del suelo en forma de lámina delgada, que se observa bajo un microscopio petrográfico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-login">
+        <div class="justify-content-center">
+            <div class="col-auto">
+                <p>© 2021. By Tatiana, Jhonatan, Mateo, Santiago</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
